@@ -1,12 +1,12 @@
 [versions]
-kotlin = "2.4.20"
+kotlin = "2.0.20"
 
 # BASE
 #jvm-compiler = "21"
 #jvm-language = "21"
 
 [libraries]
-#plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 #plugin-binaryCompatibilityValidator = "org.jetbrains.kotlinx:binary-compatibility-validator:0.13.2"
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.6.0" }
 
