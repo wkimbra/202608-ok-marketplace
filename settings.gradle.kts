@@ -2,6 +2,8 @@
 // Its primary purpose is to define the subprojects.
 // It is also used for some aspects of project-wide configuration, like managing plugins, dependencies, etc.
 // https://docs.gradle.org/current/userguide/settings_file_basics.html
+rootProject.name = "202608-ok-marketplace"
+
 
 dependencyResolutionManagement {
     // Use Maven Central as the default repository (where Gradle will download dependencies) in all subprojects.
@@ -20,11 +22,12 @@ pluginManagement{
 
 plugins {
     // Use the Foojay Toolchains plugin to automatically download JDKs required by subprojects.
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
+includeBuild("ok-myproject-be")
+includeBuild("lessons")
 
-include(":m1l1-first")
+//include(":m1l1-first")
 
 
-rootProject.name = "202608-ok-marketplace"
